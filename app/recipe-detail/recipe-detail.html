@@ -2,3 +2,7 @@
 
 <p>{{ recipe.description }}</p>
 <p>{{ recipe.directions }}</p>
+
+<img src="{{ recipe.photo }}" width="400">
+
+<button class="btn btn-danger" ng-click="deleteRecipe()"><span class="glyphicon glyphicon-trash"></span> Delete Recipe</button>

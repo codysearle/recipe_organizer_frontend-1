@@ -1,9 +1,27 @@
-<ul>
-    <li ng-repeat="recipe in recipes">{{ recipe.name }}
+
+<!--<ul>
+    <li ng-repeat="recipe in recipes"><a href="#/recipes/{{ recipe.id }}">{{ recipe.name }}</a>
         <ol>
             <li ng-repeat="ingredient in recipe.ingredients">{{ ingredient.name }}</li>
         </ol>
     </li>
 </ul>
+-->
+<section>
+    <a href="#/add-recipe"> <button class="btn" ng-click="addRecipe()"><span class="glyphicon glyphicon-plus"></span> Add New Recipe</button></a>
+    <button class="btn" ng-click="deleteRecipe()"><span class="glyphicon glyphicon-remove"></span> Delete Recipe</button>
+</section>
 
-<a href="#/add-recipe">Add a New recipe</a>
+<div ng-repeat="recipe in recipes">
+    <div class="col-sm-6 col-md-4">
+        <div class="recipe-card">
+            <h2>{{recipe.name}}</h2>
+            <img src="{{recipe.photo}}">
+
+            <p>{{recipe.description}}</p>
+        </div>
+    </div>
+
+</div>
+
+

@@ -28,3 +28,41 @@
   content: "";
   padding: 0;
 }
+
+
+.recipe-card {
+    background-color: #e88332;
+    text-align: right;
+    color: #ffffff;
+    border-radius: 1vw;
+    padding: inherit;
+}
+
+.recipe-card img {
+    max-width: 100%;
+}
+
+section {
+	color: #337ab7;
+	text-align: center;
+    margin: 1vw;
+}
+
+.jumbotron {
+    background-size: 2000px;
+    background-image: url(https://lh5.googleusercontent.com/-NAOrA3QbCZc/VMqMBDtX0oI/AAAAAAAANVY/S1YhLnZG6bQ/w1108-h334-no/Italian%2Bfood%2Bwallpaper%2B06%2B2560x1600.jpg);
+    text-color: #fff;
+}
+
+.btn {
+    background-color:#e88332;
+    border-color: #fff;
+    color:#fff;
+    border-radius: 1vw;
+}
+
+.jumbotron h1 {
+    color: #fff;
+}
+
+

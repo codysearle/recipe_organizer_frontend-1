@@ -1,3 +1,5 @@
+<section>
+
 <label>Recipe Name
     <br>
     <input ng-model="recipe.name">
@@ -24,7 +26,7 @@
     <input ng-model="ingredientName">
 </label>
 <br>
-<button ng-click="addIngredientToRecipe(ingredientName)">Add ingredient to recipe</button>
+<button class="btn" ng-click="addIngredientToRecipe(ingredientName)">Add ingredient to recipe</button>
 <br>
 
 <p>Your ingredients:</p>
@@ -37,7 +39,7 @@
     <input ng-model="tagName">
 </label>
 <br>
-<button ng-click="addTagToRecipe(tagName)">Add tag to recipe</button>
+<button class="btn" ng-click="addTagToRecipe(tagName)">Add tag to recipe</button>
 <br>
 
 <p>Your tags:</p>
@@ -46,4 +48,6 @@
 </ol>
 <br>
 
-<button ng-click="addRecipe()">Save New Recipe</button>
+<button class="btn" ng-click="addRecipe()">Save New Recipe</button>
+
+</section>
