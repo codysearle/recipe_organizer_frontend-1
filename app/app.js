@@ -8,7 +8,8 @@ angular.module('myApp', [
     'myApp.addRecipe',
     'myApp.version',
     'myApp.landing',
-    'restangular'
+    'restangular',
+    'ui.bootstrap'
 ]).
     config(['$routeProvider', 'RestangularProvider', function ($routeProvider, RestangularProvider) {
         $routeProvider.otherwise({redirectTo: '/landing'});

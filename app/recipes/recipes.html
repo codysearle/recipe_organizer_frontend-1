@@ -8,8 +8,10 @@
 </ul>
 -->
 <section>
-    <a href="#/add-recipe"> <button class="btn" ng-click="addRecipe()"><span class="glyphicon glyphicon-plus"></span> Add New Recipe</button></a>
-    <button class="btn" ng-click="deleteRecipe()"><span class="glyphicon glyphicon-remove"></span> Delete Recipe</button>
+    <button type="button" class="btn btn-primary btn" ng-click="open()">
+    <span class="glyphicon glyphicon-plus"></span> Add New Recipe
+</button>
+    <button class="btn btn-primary" ng-click="deleteRecipe()"><span class="glyphicon glyphicon-remove"></span> Delete Recipe</button>
 </section>
 
 <div ng-repeat="recipe in recipes">
@@ -23,5 +25,13 @@
     </div>
 
 </div>
+
+
+<!-- Button trigger modal
+<button type="button" class="btn btn-primary btn-lg" ng-click="open()">
+    <span class="glyphicon glyphicon-plus"></span> Add New Recipe
+</button>
+
+ Modal -->
 
 

@@ -1,0 +1,61 @@
+<div class="modal-header">
+    <h3 class="modal-title">This feature sucks less!</h3>
+</div>
+<div class="modal-body">
+    <label>Recipe Name
+        <br>
+        <input ng-model="recipe.name">
+    </label>
+    <br>
+    <br>
+
+    <label>Recipe Description
+        <br>
+        <textarea ng-model="recipe.description"></textarea>
+    </label>
+    <br>
+    <br>
+
+    <label>Recipe Directions
+        <br>
+        <textarea ng-model="recipe.directions"></textarea>
+    </label>
+    <br>
+    <br>
+
+    <label>Ingredients
+        <br>
+        <input ng-model="ingredientName">
+    </label>
+    <br>
+    <button class="btn btn-primary" ng-click="addIngredientToRecipe(ingredientName)"><span
+            class="glyphicon glyphicon-plus"></span> Add ingredient
+    </button>
+    <br>
+
+    <p>Your ingredients:</p>
+    <ol>
+        <li ng-repeat="ingredient in recipe.ingredients">{{ ingredient.name }}</li>
+    </ol>
+
+    <label>Tags
+        <br>
+        <input ng-model="tagName">
+    </label>
+    <br>
+    <button class="btn btn-primary" ng-click="addTagToRecipe(tagName)"><span class="glyphicon glyphicon-tag"></span> Add
+        tag to recipe
+    </button>
+    <br>
+
+    <p>Your tags:</p>
+    <ol>
+        <li ng-repeat="tag in recipe.tags">{{ tag.name }}</li>
+    </ol>
+    <br>
+
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="addRecipe()"> Save New Recipe</button>
+    <button class="btn btn-primary" ng-click="cancel()">Cancel</button>
+</div>
